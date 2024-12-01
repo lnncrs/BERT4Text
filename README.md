@@ -4,10 +4,10 @@
 
 ![UFABC Logo](assets/logotipo-ufabc-extenso.png)
 
-Universidade Federal do ABC - Bacharelado em Ciência e Tecnologia Inteligência Artificial 2024/Q3
+Universidade Federal do ABC - Bacharelado em Ciência e Tecnologia<br />
+Inteligência Artificial 2024/Q3
 
-Lenin Cristi
-
+Lenin Cristi<br />
 lenin.cristi@aluno.ufabc.edu.br
 
 ## Resumo
