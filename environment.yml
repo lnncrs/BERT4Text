@@ -1,12 +1,19 @@
-name: ampl
+name: bert
 channels:
-  - defaults
   - conda-forge
+  - defaults
 dependencies:
-  - python=3.9
-  - pip
+  - python=3.11
   - numpy
+  - pandas
   - matplotlib
   - scikit-learn
-  - ipykernel
-  - pandas
+  - scipy
+  - seaborn
+  - jupyterlab
+  - ipywidgets
+  - notebook
+  - tqdm
+  - plotly
+  - faker
+  - pip

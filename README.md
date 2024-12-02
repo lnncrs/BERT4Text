@@ -52,36 +52,49 @@ Para abordagens de **mundo real**, são necessários métodos de aumento mais ro
 
 ## Anexo: Como gerar o ambiente para reproduzir os experimentos
 
-### Utilizando Conda com o arquivo environments.yml neste repositório
+Vamos mostrar a seguir um exemplo de como criar o ambiente necessário usando o gerenciador de ambientes e pacotes Anaconda como base com o arquivo environments.yml neste repositório.
 
-Para criar o ambiente com os pacotes necessários a partir de arquivo
+### Instalando o conda
+
+Utilize a referência oficial Anaconda para instalar o miniconda no seu ambiente https://docs.anaconda.com/miniconda/install/
+
+### Criando o ambiente
+
+Para criar o ambiente com os pacotes base a partir do arquivo
 
 ```bash
 conda env create -f environment.yml
 ```
 
-### Utilizando Conda
+### Ativando o ambiente
 
-Para criar, ativar e instalar os pacotes necessários num ambiente
+Após a instalação do ambiente base, ative ele com
 
 ```bash
-conda create -n health python=3.11
+conda activate bert
 ```
 
+### Pytorch
+
+Instale o pytorch conforme seu sistema e dispositivos disponíveis, usando a referência oficial aqui https://pytorch.org/get-started/locally/
+
+Abaixo um comando usando dispositivos Nvidia
+
 ```bash
-conda activate health
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 ```
 
-```bash
-conda install numpy matplotlib scikit-learn ipykernel pandas -c defaults -c conda-forge
-```
+### Hugginface & Transformers
 
-### Utilizando Pip
+Instale as bibliotecas Hugginface usando a referência oficial aqui https://huggingface.co/docs/transformers/installation
 
-Crie e ative um ambiente usando pip ou pyenv antes e instale os seguintes pacotes
+Abaixo um comando comum de instalação (a biblioteca sentencepiece não faz parte do Hugginface mas foi icluida aqui)
 
 ```bash
-pip install numpy matplotlib scikit-learn ipykernel pandas
+pip install transformers datasets evaluate
+pip install accelerate
+pip install huggingface_hub
+pip install sentencepiece
 ```
 
 ## Referências
