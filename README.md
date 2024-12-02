@@ -18,7 +18,7 @@ lenin.cristi@aluno.ufabc.edu.br
 
 ## Finetuning do modelo BERT
 
-O passo a passo do finetuning está no notebook [BERTFinetuning](BERTFinetuning.ipynb).
+O passo a passo do finetuning está no notebook [BERTFinetuning](./notebooks/BERTFinetuning.ipynb).
 
 ## Dados utilizados
 
@@ -26,13 +26,13 @@ O conjunto de dados utilizado como base foi o [Breast Cancer Wisconsin (Diagnost
 
 ## Preparação dos dados
 
-A preparação dos dados está no notebook [PrepareData](PrepareData.ipynb).
+A preparação dos dados está no notebook [PrepareData](./notebooks/PrepareData.ipynb).
 
 Os dados originais foram aumentados sinteticamente somente para fins da demonstração do passo a passo do finetuning.
 
 Para abordagens de **mundo real**, são necessários métodos de aumento mais robustos utilizando por exemplo
 
-- Modelos LLM para geração de dados sintéticos (como no exemplo curto [SinteticData](SinteticData.ipynb) que usa Llama 3.2) baseados em dados de mundo real (como o Wisconsin Dataset usado aqui) e **revisados** por corpo médico regularmente registrado.
+- Modelos LLM para geração de dados sintéticos (como no exemplo curto [SinteticData](./notebooks/SinteticData.ipynb) que usa Llama 3.2) baseados em dados de mundo real (como o Wisconsin Dataset usado aqui) e **revisados** por corpo médico regularmente registrado.
 
 - Dados anotados **diretamente** por corpo médico regularmente registrado.
 
